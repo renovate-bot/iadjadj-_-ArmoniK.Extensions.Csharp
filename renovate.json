@@ -5,7 +5,6 @@
   
   "packageRules": [
     {
-      "matchDatasource": "nuget",
       "matchFiles": ["Armonik*.csproj"],
       "description": "Group all Armonik packages into single PRs to reduce noise",
       "matchPackagePrefixes": ["ArmoniK"],
@@ -13,7 +12,6 @@
       "excludePackageNames": ["^Microsoft\\.", "^System\\."]
     },
     {
-      "matchDatasource": "docker",
       "groupName": "MyProject Docker Images",
       "includeForks": true,
       "excludePackageNames": ["^baseimage\\.", "^microsoft\\."]
