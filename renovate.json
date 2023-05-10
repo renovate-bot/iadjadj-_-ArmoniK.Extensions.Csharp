@@ -1,11 +1,22 @@
 {
   "forkProcessing": "enabled",
+  
+  "schedule": [ "every weekday" ],
+  
   "packageRules": [
     {
+      "matchDatasource": "nuget",
       "matchFiles": ["Armonik*.csproj"],
       "description": "Group all Armonik packages into single PRs to reduce noise",
       "matchPackagePrefixes": ["ArmoniK"],
-      "groupName": "Armonik dependencies"
+      "groupName": "Armonik dependencies",
+      "excludePackageNames": ["^Microsoft\\.", "^System\\."]
+    },
+    {
+      "matchDatasource": "docker",
+      "groupName": "MyProject Docker Images",
+      "includeForks": true,
+      "excludePackageNames": ["^baseimage\\.", "^microsoft\\."]
     }
   ]
 }
