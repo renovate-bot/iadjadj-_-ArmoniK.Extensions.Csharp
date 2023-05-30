@@ -5,10 +5,9 @@
   
   "packageRules": [
     {
-      "matchFiles": ["Armonik*.csproj"],
-      "description": "Group all Armonik packages into single PRs to reduce noise",
       "matchPackagePrefixes": ["ArmoniK"],
-      "groupName": "Armonik dependencies"
+      "includeForks": true,
+      "groupName": "Group Armonik nuget"
     },
     {
       "groupName": "MyProject Docker Images",
