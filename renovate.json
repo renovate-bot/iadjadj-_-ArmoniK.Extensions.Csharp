@@ -8,11 +8,6 @@
       "matchPackagePrefixes": ["ArmoniK"],
       "includeForks": true,
       "groupName": "Group Armonik nuget"
-    },
-    {
-      "groupName": "MyProject Docker Images",
-      "includeForks": true,
-      "excludePackageNames": ["^baseimage\\.", "^microsoft\\."]
     }
   ]
 }
