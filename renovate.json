@@ -5,7 +5,7 @@
   
   "packageRules": [
     {
-      "matchPackagePrefixes": ["ArmoniK"],
+      "matchPaths": ["**csproj/**"],
       "includeForks": true,
       "groupName": "Group Armonik nuget"
     }
