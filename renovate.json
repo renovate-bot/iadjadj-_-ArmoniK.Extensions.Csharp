@@ -8,6 +8,12 @@
       "matchPackagePatterns": ["^ArmoniK"],
       "includeForks": true,
       "groupName": "Group Armonik nuget"
+    },
+    {
+    "macthPackagePatterns": [
+      "*"
+    ],
+    "groupeName": "authers dependencies !!!!"
     }
   ]
 }
